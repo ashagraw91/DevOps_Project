@@ -1,0 +1,14 @@
+{% extends "pages/base.html" %} <!--extends from the "base.html" template-->
+{% block content %}
+    <h1>Hello</h1>
+
+    <!--Javascript snippet that prompts user for input and displays the input on the webpage-->
+    <button id="name">Click Me</button>
+    <p><span id="outputName">___________</span></p>
+    <script>
+        document.getElementById("name").onclick = function(){
+            var name = prompt("Enter your name");
+        document.getElementById("outputName").innerText = name;
+        }
+    </script>
+{% endblock content %}
